@@ -1,0 +1,8 @@
+# Изменить кодировку во всех заданных  файлах:
+{{{ for i in ``find -iname "*.h" -o -iname "*.h" ``; do mv $i $orig; iconv -f cp1251 -t utf8 $i.orig > $i; done }}}
+
+# Распаковка tar.bz2
+{{{ tar -xjf <файл> }}}
+
+# Удаление из SVN удалённых файлов
+{{{ svn rm `svn status | awk '/!/ { print $2 } '` }}}

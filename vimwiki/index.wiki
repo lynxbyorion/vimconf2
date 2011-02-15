@@ -1,0 +1,17 @@
+=Документация=
+    * [[Схема стенда]]
+    * [[Командная строка]]
+    * [[6МФ2]]
+    * [[Документация по Vim]]
+    * [[Заметки по Git]]
+    * 
+=Подсказки=
+    * [[Killall]]
+    * [[Настройка VPN]]
+=Словарь=
+    * [[Слова]]
+    * [[Словосочетания]]
+= My knowledge base =
+    * MyUrgentTasks -- things to be done _yesterday_!!!
+    * ProjectGutenberg -- good books are power.
+    * ScratchPad -- various  stuff.
