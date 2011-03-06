@@ -4498,7 +4498,7 @@ endfunction
 		elseif encoding == 'cp936'
 			let encoding = 'GBK'
 		elseif encoding =~ '^ucs\|^utf'
-			let encoding = 'UTF-8'
+			let encoding = 'utf8'
 		else
 			let encoding = ""
 		endif
@@ -4987,7 +4987,7 @@ endfunction
 		elseif encoding == 'cp936'
 			let encoding = 'GBK'
 		elseif encoding =~ '^ucs\|^utf'
-			let encoding = 'UTF-8'
+			let encoding = 'utf8'
 		else
 			let encoding = ""
 		endif
@@ -5328,6 +5328,8 @@ endfunction
 			\.'\usepackage{tabularx}'."\n"
 			\.'\usepackage{amsmath}'."\n"
 			\.'\usepackage['.encoding."]{inputenc}\n"
+			\.'\usepackage[T2A]{fontenc}'."\n"
+			\.'\usepackage[russian]{babel}'."\n"
 			\.countrysettings."\n"
 			\.'\newenvironment{deflist}[1]{%'."\n"
 			\.'\begin{list}{}'."\n"
