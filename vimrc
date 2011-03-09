@@ -38,6 +38,9 @@ set smartindent         " Включаем умные отступы (напри
 " for makefile tabs
 autocmd FileType make set noexpandtab tabstop=8 shiftwidth=8
 
+" for tex
+autocmd FileType tex set textwidth=78
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
@@ -59,7 +62,7 @@ set mousehide               " Скрывать курсор мыши когда 
 
 "настройка цветовой схемы
 set t_Co=256                " поддержка 256 цветов в терминале ( необходимо TERM=xterm-256color)
-colorscheme bluegreen  " Неплохие схемы: calmar256-dark, peaksea, lucius, wombat256 
+colorscheme peaksea         " Неплохие схемы: calmar256-dark, peaksea, lucius, wombat256 
 
 set winminheight=0          " Минимальная высота окна
 set winminwidth=0           " Минимальная ширина окна
