@@ -97,30 +97,38 @@ set browsedir=current       " ????? TODO: I don't now!
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 """""""""""""""""""""""""""" Search settings"""""""""""""""""""""""""""""""""""
-                                                                              "
-set ignorecase              " Case of normal letter is ignored                "
-set smartcase               " If search pattern contain upper -> noignorecase "
-set incsearch               " Поиск по набору текста                          "
-set hlsearch                " Подсвечивать найденные элементы                 "
-                                                                              "
+                                                                             ""
+set ignorecase              " Case of normal letter is ignored               ""
+set smartcase               " If search pattern contain upper -> noignorecase""
+set incsearch               " Поиск по набору текста                         ""
+set hlsearch                " Подсвечивать найденные элементы                ""
+                                                                             ""
+function! MyHlSearch()                                                       ""
+    if &hlsearch == 0                                                        ""
+        :set hlsearch                                                        ""
+    else                                                                     ""
+        :set nohlsearch                                                      ""
+    endif                                                                    ""
+endfunction                                                                  ""
+                                                                             ""
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-""""""""""""""""""""""" Folding""""""""""""""""""""""""""""""""""""""""""""""""""
-                                                                                "
-set foldenable              "                                                   "
-set foldmethod=manual       "                                                   "
-set foldcolumn=3            "                                                   "
-set foldlevel=1             "                                                   "
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""" Folding""""""""""""""""""""""""""""""""""""""""""""""""
+                                                                             ""
+set foldenable              "                                                ""
+set foldmethod=manual       "                                                ""
+set foldcolumn=3            "                                                ""
+set foldlevel=1             "                                                ""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " switch on/off spelling 
 imap    <F3>    <Esc>:set spell!<CR>
 nmap    <F3>    <Esc>:set spell!<CR>
 
 " Очистить подсветку последнего найденного выражения
-nmap    <S-F3> :nohlsearch<CR>
-imap    <S-F3> <Esc>:nohlsearch<CR>
-vmap    <S-F3> <Esc>:nohlsearch<CR>gv
+nmap    <S-F3> :call MyHlSearch()<CR>
+imap    <S-F3> <Esc>:call MyHlSearch()<CR>
+vmap    <S-F3> <Esc>:call MyHlSearch()<CR>gv
 
 " F4 -- просмотр ошибок
 nmap    <F4>    :copen<CR>
