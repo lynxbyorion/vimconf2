@@ -43,6 +43,9 @@ autocmd FileType make set noexpandtab tabstop=8 shiftwidth=8
 " for tex
 autocmd FileType tex set textwidth=78 foldmethod=marker
 
+" for html.erb
+autocmd BufNewFile,BufRead *.html.erb set filetype=eruby.html
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
