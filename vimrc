@@ -41,7 +41,7 @@ set smartindent         " Включаем умные отступы (напри
 autocmd FileType make set noexpandtab tabstop=8 shiftwidth=8
 
 " for tex
-autocmd FileType tex set textwidth=78 foldmethod=marker
+autocmd FileType tex set textwidth=78 foldmethod=marker tabstop=4
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
