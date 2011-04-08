@@ -32,7 +32,7 @@ set shiftwidth=4        "табуляция авто отступов
 set tabstop=4           "табуляция
 
 set autoindent          " авто отступ
-set cindent             " Indentation in the style of C
+" set cindent             " Indentation in the style of C
 set smarttab
 set expandtab           " Вместо табуляции пробелы
 set smartindent         " Включаем умные отступы (например после { )
