@@ -41,10 +41,13 @@ set smartindent         " Включаем умные отступы (напри
 autocmd FileType make set noexpandtab tabstop=8 shiftwidth=8
 
 " for tex
-autocmd FileType tex set textwidth=78 foldmethod=marker tabstop=4
+autocmd FileType tex set textwidth=78 foldmethod=marker tabstop=2 shiftwidth=2 softtabstop=2
 
 " for html.erb
 autocmd BufNewFile,BufRead *.html.erb set filetype=eruby.html
+
+" for cpp
+autocmd FileType cpp set softtabstop=4 shiftwidth=4 tabstop=4
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
